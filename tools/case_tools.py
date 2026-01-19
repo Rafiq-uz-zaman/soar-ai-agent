@@ -3,7 +3,7 @@ from iris_client import IRISIntegration
 
 iris = IRISIntegration(
     api_key="YOUR_IRIS_API_KEY",
-    base_url="https://192.168.18.122"
+    base_url="YOUR_IRIS_URL"
 )
 
 @tool
@@ -15,3 +15,4 @@ def find_existing_case(title: str, customer_id: int):
 def create_new_case(case_payload: dict):
     """Create new IRIS case"""
     return iris.create_case(case_payload)
+
