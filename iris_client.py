@@ -1,4 +1,11 @@
 import requests
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+api_key = os.getenv("IRIS_API_KEY")
+base_url = os.getenv("IRIS_URL")
 
 requests.packages.urllib3.disable_warnings()
 
@@ -41,3 +48,4 @@ class IRISIntegration:
                 "import_as_event": False
             }
         )
+
