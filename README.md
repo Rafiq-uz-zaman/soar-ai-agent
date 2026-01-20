@@ -68,8 +68,10 @@ pip install -r requirements.txt
 
 🔑 Environment Setup
 
-1️⃣ OpenAI API Key
-export OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxx
+1️⃣ OpenAI API Key in .env file
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxx
+IRIS_API_KEY=B8xxxxxxxxxxxx
+IRIS_URL=httpsxxxxxxxxxxx
 
 2️⃣ Update IRIS API credentials
 tools/case_tools.py
